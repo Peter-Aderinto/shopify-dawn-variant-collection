@@ -1,0 +1,57 @@
+# Dependencies, caches and generated reports
+node_modules/
+.npm/
+.cache/
+coverage/
+playwright-report/
+test-results/
+*.log
+
+# Local Shopify connections and credentials
+.shopify/
+shopify.theme.toml
+shopify.theme.*.toml
+.theme-kit.yml
+config.yml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Theme archives and local backups
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+*.orig
+*.swp
+*~
+/backups/
+/tmp/
+
+# Local editor, agent and OS files
+.vscode/
+.idea/
+.agents/
+.codex/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Private assessment material and store exports: keep these local
+/private/
+/assessment-private/
+/store-exports/
+
+# Keep Shopify's required source folders and reviewed default settings tracked.
+# config/settings_data.json currently matches upstream Dawn defaults.
+# Review it, templates/*.json and sections/*-group.json after any theme pull.
+# .gitignore cannot protect secrets added to tracked theme files.
+
+# Local publication preparation and internal review (not portfolio content)
+/.publication/
+/PUBLICATION_REVIEW.md
