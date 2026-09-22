@@ -16,6 +16,12 @@ The desktop collection above shows one product displayed as four colour cards. T
 
 ![Product page showing the Green cardigan variant selected alongside size, colour and quantity controls](screenshots/product-page.png)
 
+### Mobile collection
+
+The collection uses a two-column layout in the supplied Chrome DevTools mobile preview (iPhone 14 Pro Max preset, 430 × 932 viewport). This is browser emulation, not a physical-device test.
+
+![Mobile collection in Chrome DevTools showing four colour variant cards arranged in two columns](screenshots/collection-mobile.png)
+
 These screenshots illustrate the interface; they do not establish that cart, checkout or every responsive interaction has been tested.
 
 ## Key Features
@@ -117,7 +123,7 @@ locales/      Translation files
 sections/     Page sections, including the collection grid
 snippets/     Reusable components, including cards and pricing
 templates/    Page templates
-screenshots/  Collection and product-page screenshots
+screenshots/  Desktop collection, mobile preview and product-page screenshots
 ```
 
 ## Validation and limitations
@@ -130,7 +136,7 @@ The implementation-stage Theme Check inspected 155 files with **zero errors and 
 - Accurate colour images require variant image assignments. A missing assignment can fall back to the parent product image.
 - Localised option names other than `Color` and `Colour` are not recognised.
 - Shopify limits the unpaginated `product.variants` array to 250 variants. The option-value fallback does not guarantee complete coverage for larger products. See [Shopify's high-variant guidance](https://shopify.dev/docs/storefronts/themes/product-merchandising/variants/support-high-variant-products).
-- The supplied screenshots document desktop collection and product-page appearance. Interactive cart behaviour and mobile rendering have not been verified in this workspace. No live demo is claimed.
+- The supplied screenshots document desktop collection and product-page appearance, plus a browser-emulated mobile collection view. Interactive cart behaviour and physical-device compatibility have not been verified in this workspace. No live demo is claimed.
 
 ## License and attribution
 
